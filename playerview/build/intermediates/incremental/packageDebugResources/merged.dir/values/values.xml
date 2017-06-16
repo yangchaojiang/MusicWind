@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="playerview"><attr format="integer" name="cover"/><attr format="color" name="buttonColor"/><attr format="color" name="progressEmptyColor"/><attr format="color" name="progressLoadedColor"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/></declare-styleable>
+    <dimen name="pause_bar_distance">40dp</dimen>
+    <dimen name="pause_bar_height">144dp</dimen>
+    <dimen name="pause_bar_width">48dp</dimen>
+</resources>

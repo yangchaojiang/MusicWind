@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerView_play"
+    android:layout_width="210dp"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menu_bg"
+    android:fastScrollEnabled="true"
+    android:fitsSystemWindows="true">
+
+</android.support.v7.widget.RecyclerView>

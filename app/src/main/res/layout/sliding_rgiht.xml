@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25272d">
+
+    <TextView
+        android:id="@+id/textViewSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/textViewSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#80FFFFFF"
+        android:textSize="15sp" />
+
+
+    <co.mobiwise.playerview.MusicPlayerView
+        android:id="@+id/musicPlayerView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textViewSinger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:buttonColor="#ff0028"
+        app:progressLoadedColor="#00815e"
+        app:textColor="#80FFFFFF"
+        app:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/musicPlayerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_icon_like"
+        android:contentDescription="@null" />
+
+
+    <ImageButton
+        android:contentDescription="@null"
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/musicPlayerView"
+        android:layout_below="@id/musicPlayerView"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@drawable/ic_icon_next" />
+
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/previous"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/musicPlayerView"
+        android:layout_below="@id/musicPlayerView"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_icon_previous_month" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25272d"
+    android:fitsSystemWindows="true">
+
+    <com.data.user.view.SlidingMenu
+        android:id="@+id/sm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 左侧菜单 -->
+        <include layout="@layout/sliding_left"/>
+        <!-- 右侧内容 -->
+        <include layout="@layout/sliding_rgiht"/>
+    </com.data.user.view.SlidingMenu>
+
+</RelativeLayout>

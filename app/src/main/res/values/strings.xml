@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">音乐风</string>
+
+    <array name="dataList">
+        <item>欧美</item>
+        <item>内地</item>
+        <item>港台</item>
+        <item>韩国</item>
+        <item>日本</item>
+        <item>民谣</item>
+        <item>摇滚</item>
+        <item>销量</item>
+        <item>热歌</item>
+    </array>
+    <array name="dataListId">
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>23</item>
+        <item>26</item>
+    </array>
+    <string name="song_not_selected">Song not selected!</string>
+    <string name="sing_name">歌手:</string>
+    <string name="song_music">歌曲:</string>
+    <string name="action_search">搜索歌曲</string>
+    <string name="not_data_string">没有数据</string>
+    <dimen name="cover_size">60dp</dimen>
+</resources>
