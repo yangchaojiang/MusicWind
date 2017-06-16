@@ -1,1 +1,2 @@
-*.kt linguist-language=kotlin
+*.java linguist-language=kotlin
+*.class linguist-language=kotlin
