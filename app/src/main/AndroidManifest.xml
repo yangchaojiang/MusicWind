@@ -8,6 +8,7 @@
     <!-- This permission granted by default on Android 6.0+ devices. -->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <application
         android:name=".App"
         android:allowBackup="true"

@@ -2,6 +2,7 @@ package com.data.user.ui
 
 import android.app.ActivityManager
 import android.arch.lifecycle.LifecycleFragment
+import android.arch.lifecycle.Observer
 import android.content.Context
 import android.os.Bundle
 import android.support.v7.widget.DefaultItemAnimator
@@ -45,15 +46,11 @@ class MyListFragment : LifecycleFragment() {
     private lateinit var mListAdapter: ListAdapter
     private var mMyListLifecycle = MyListLifecycle()
     private lateinit var helper: LoadViewHelper
-    override fun setArguments(args: Bundle?) {
-        super.setArguments(args)
-        if (args != null) {
-            topId = args.get("topId") as Int
-        }
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        topId = arguments.getInt("topId")
         lifecycle.addObserver(mMyListLifecycle)
     }
 
@@ -76,11 +73,11 @@ class MyListFragment : LifecycleFragment() {
         }
         mListAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_LEFT)
         swipeRefreshLayout.isRefreshing = true
-        getData()
         helper.setListener {
             helper.showLoading()
             getData()
         }
+        getData()
     }
 
     /***
@@ -99,7 +96,7 @@ class MyListFragment : LifecycleFragment() {
     }
 
     fun getData() {
-        mMyListLifecycle.getMusicList(topId).observeForever {
+        mMyListLifecycle.getMusicList(topId).observe(this, Observer {
             t: Pagebean? ->
             swipeRefreshLayout.isRefreshing = false
             helper.restore()
@@ -110,20 +107,7 @@ class MyListFragment : LifecycleFragment() {
             } else {
                 helper.showEmpty()
             }
-        }
+        })
     }
-
-    /**
-     * Check if service is running.
-
-     * @param serviceClass  检查服务是否存在
-     * *
-     * @return
-     */
-    private fun isServiceRunning(serviceClass: Class<*>): Boolean {
-        val manager = activity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
-        return manager.getRunningServices(Integer.MAX_VALUE).any { serviceClass.name == it.service.className }
-    }
-
 }
 
