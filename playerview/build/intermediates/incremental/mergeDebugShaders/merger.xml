@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\demo\2017-06-07\MyApplication\playerview\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\demo\2017-06-07\MyApplication\playerview\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\demo\2017-06-07\MusicWind\playerview\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\demo\2017-06-07\MusicWind\playerview\src\debug\shaders"/></dataSet></merger>

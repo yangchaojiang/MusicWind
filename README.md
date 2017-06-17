@@ -5,3 +5,7 @@
 
    使用google Architecture Components  作为项目的架构，
    包含 Lifecycle ，LiveData ， ViewModel
+
+   支持 悬浮穿播放音乐
+
+   ![](2222.gif)

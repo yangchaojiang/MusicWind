@@ -99,9 +99,9 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Lifecy
     @SuppressLint("NewApi")
     fun checkDrawOverlayPermission() {
         if (Build.VERSION.SDK_INT >= 23) {
-            YUtils.Toast("无法开启悬浮窗,当前无权限，请授权！")
             /** check if we already  have permission to draw over other apps  */
             if (!Settings.canDrawOverlays(this)) {
+                YUtils.Toast("无法开启悬浮窗,当前无权限，请授权！")
                 /** if not construct intent to request permission  */
                 val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                         Uri.parse("package:" + packageName))

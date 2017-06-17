@@ -4,7 +4,15 @@
         "source": "D:\\demo\\2017-06-07\\MyApplication\\playerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon_pause.png"
     },
     {
+        "merged": "D:\\demo\\2017-06-07\\MusicWind\\playerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_pause.png",
+        "source": "D:\\demo\\2017-06-07\\MusicWind\\playerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon_pause.png"
+    },
+    {
         "merged": "D:\\demo\\2017-06-07\\MyApplication\\playerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_play.png",
         "source": "D:\\demo\\2017-06-07\\MyApplication\\playerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon_play.png"
+    },
+    {
+        "merged": "D:\\demo\\2017-06-07\\MusicWind\\playerview\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_play.png",
+        "source": "D:\\demo\\2017-06-07\\MusicWind\\playerview\\build\\intermediates\\bundles\\debug\\res\\drawable\\icon_play.png"
     }
 ]
